@@ -1,0 +1,146 @@
+/* ---------- General Page Setup ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cinzel", serif;
+  background-color: #f7f5f2;
+  color: #333;
+  text-align: center;
+}
+
+/* ---------- Header / Cover Section ---------- */
+.container {
+  position: relative;
+  width: 100%;
+
+  height: 100vh;
+  background-image: url("pictures/journalpage11.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.journal .cover {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-bottom: 5px solid #d8cfc4;
+}
+
+.journal h1 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  font-family: "Cinzel", serif;
+  font-size: 60px;
+  color: white;
+  line-height: 1.1;
+  text-transform: capitalize;
+  white-space: pre-line;
+  text-align: left;
+}
+#logoutBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #4a3f35;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#logoutBtn:hover {
+  background-color: #6b5a4a;
+}
+
+/* ---------- Journal Writing Section ---------- */
+.new-journal {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-journal h2 {
+  color: #4a3f35;
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c8b8a6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-family: "Cinzel", serif;
+}
+
+textarea {
+  resize: none;
+  line-height: 1.6;
+}
+
+#saveBtn {
+  background-color: #4a3f35;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+#saveBtn:hover {
+  background-color: #6b5a4a;
+}
+
+/* ---------- Saved Journals Section ---------- */
+.myjournals {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.myjournals button {
+  background-color: #4a3f35;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.myjournals button:hover {
+  background-color: #6b5a4a;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .journal h1 {
+    font-size: 1.8rem;
+  }
+
+  .new-journal {
+    width: 95%;
+    padding: 20px;
+  }
+}
