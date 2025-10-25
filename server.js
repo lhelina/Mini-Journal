@@ -147,7 +147,7 @@ app.post("/forgot-password", async (req, res) => {
 
     const resetLink = `http://localhost:3000/reset-password?token=${token}`;
     await transporter.sendMail({
-      from: process.env.EMAIL_USER,
+     from: `"Mini Journal Team" <${process.env.EMAIL_USER}>`,
       to: email,
       subject: "Reset your Mini Journal password",
       html: `<p>Click <a href="${resetLink}">here</a> to reset your password.</p>`,
